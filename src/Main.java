@@ -10,7 +10,7 @@ public class Main {
         category3.addComponent(new Product("product3"));
 
         Category category2 = new Category("category2");
-        category02.addComponent(category3);
+        category2.addComponent(category3);
 
         Category category1 = new Category("category1");
         category1.addComponents(new Product("product1"), new Category("category1"), category2);
