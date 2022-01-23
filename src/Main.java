@@ -4,16 +4,16 @@ import application.Product;
 public class Main {
     public static void main(String[] args) {
 
-        Product removableProduct = new Product("product");
+        Product removableProduct = new Product("remProduct1");
 
         Category category3 = new Category("category3");
-        category3.addComponent(new Product("product03"));
+        category3.addComponent(new Product("product3"));
 
-        Category category02 = new Category("category02");
+        Category category2 = new Category("category2");
         category02.addComponent(category3);
 
         Category category1 = new Category("category1");
-        category1.addComponents(new Product("product1"), new Category("category01"), category02);
+        category1.addComponents(new Product("product1"), new Category("category1"), category2);
 
         category3.deleteChild(removableProduct);
 
